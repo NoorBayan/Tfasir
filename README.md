@@ -49,10 +49,12 @@ To begin working with the **Tfasir Dataset**, follow these steps:
  <p align="center">
    <img src = "https://raw.githubusercontent.com/NoorBayan/Tfasir/main/images/TfasirColab.png" width = "800px"/>
  </p>
+ 
 1. **Clone the Repository**:
    Clone the repository to your local machine using the command:
    ```bash
    git clone https://github.com/NoorBayan/Tfasir.git
+   
 2. **Access the Google Colab Notebook**:  
    Open the provided Google Colab notebook, which is designed to showcase the dataset’s features and facilitate easy exploration.
 
