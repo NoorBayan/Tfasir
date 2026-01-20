@@ -1,69 +1,123 @@
-# Tfasir Dataset - Summarized Quranic Exegesis Corpus
 
-## Table of Contents
-1. [Project Overview](#project-overview)
-2. [Data Structure and Description](#data-structure-and-description)
-3. [Methodology and Development Process](#methodology-and-development-process)
-4. [Application and Usage](#application-and-usage)
-5. [Getting Started](#getting-started)
-6. [Contributing](#contributing)
-7. [License and Acknowledgments](#license-and-acknowledgments)
+# Tafseer Project: Intelligent Heritage Knowledge Engineering
+
+> **From Text Blocks to Knowledge Trees:** Transforming 44 classical Quranic exegesis works into structured, hierarchical, and computable data.
+
+## 📖 Project Overview
+
+The **Tafseer Project** represents the "Cognitive Layer" of the Quranic digital ecosystem. It moves beyond traditional digitization towards **Heritage Knowledge Engineering**. By processing 44 foundational references (such as Al-Tabari, Al-Razi, and Ibn Ashur), the system transforms dense, intertwined textual blocks into **Smart Hierarchical Data Structures**.
+
+This approach allows for the automated decomposition of arguments (Opinion $\to$ Evidence $\to$ Reasoning), rendering this massive heritage "liquid" and computationally processable, while strictly preserving scientific integrity and the map of scholarly divergence.
 
 ---
 
-### Project Overview
-The **Tfasir Dataset** project is a transformative resource for Quranic studies and Islamic scholarship, harnessing state-of-the-art technology to make classical Quranic exegesis accessible, concise, and easily navigable.
+## 💡 Philosophy: Engineering Wisdom
 
-**Tfasir**, which means interpretation, is essential for understanding the intricate messages of the Quran, addressing questions of meaning, historical context, and application in daily life. However, traditional Tfasir texts, while profound, often present complex linguistic and theological details that can be challenging for readers without a deep background in classical Arabic and Islamic studies.
+Our Islamic library is filled with treasures of "Mother Tafseers," but they often remain inaccessible behind barriers of complex classical language, length, and overlapping topics.
 
-To bridge this gap, **Tfasir Dataset** offers a meticulously curated collection of summaries from over 90 prominent Tfasir works, designed to provide accessible, reliable interpretations of Quranic verses. This project utilizes AI advancements, particularly the **Gemini language model by Google**, to generate high-quality summaries, making the depth of Quranic knowledge readily available to educators, students, and researchers, while preserving the integrity and richness of the original interpretations.
+**Our Mission:** We do not aim to merely "abridge" the text. We aim to **"Engineer Wisdom."** We believe the modern researcher needs the essence of these works without losing their depth. We convert dense texts into **"Liquid Knowledge Units"** that flow easily to the modern mind, answering the "why" and "how" of interpretations without drowning the reader in unstructured details.
 
-### Data Structure and Description
-The **Tfasir Dataset** is organized in a detailed, hierarchical structure that reflects the layered complexity of Quranic exegesis. Each entry in the dataset includes:
-- **Tfasir Book**: The original source text for the interpretation.
-- **Interpreter**: Name of the author or scholar responsible for the Tfasir.
-- **Surah (Chapter)**: The Quranic chapter in focus.
-- **Ayah (Verse)**: The specific verse being interpreted.
-- **Interpretive Hierarchy**: For each ayah, the main topics are identified, branching into relevant subtopics that provide additional theological, legal, and contextual explanations. Each primary topic can expand into subtopics, allowing for nuanced exploration of the Tfasir content.
+---
 
-This hierarchical model enables a comprehensive view, allowing users to drill down into specific interpretations or explore broader thematic explanations as desired.
+## ⚠️ The Technical Gap: The Failure of "Flat Summarization"
 
-### Methodology and Development Process
-The creation of the **Tfasir Dataset** follows a rigorous, multi-phase methodology to ensure both accuracy and usability:
-1. **Data Collection**: Sourcing authoritative Tfasir works covering a diverse range of classical and contemporary interpretations.
-2. **Data Preprocessing**: Cleaning, organizing, and structuring the raw texts to ensure they are suitable for summarization and database integration.
-3. **Model Fine-tuning**: Using Google’s **Gemini language model**, optimized for Arabic language processing, to generate clear, accurate summaries while maintaining the nuanced meanings of each verse.
-4. **Data Structuring and Integration**: Formatting the summarized data into a database and hierarchical corpus to ensure logical flow and ease of access.
-5. **Evaluation and Validation**: Implementing a rigorous evaluation process with scholars to verify the accuracy, clarity, and authenticity of the summaries, ensuring that they meet the standards of Islamic scholarship.
+Most current AI summarization techniques rely on **Flat Summarization**, which compresses text by randomly pruning sentences. This is catastrophic for dialectical heritage texts.
 
-### Application and Usage
-The **Tfasir Dataset** serves as a versatile tool for Quranic education, research, and personal study. Its applications include:
-- **Educational Tools**: Providing a reliable resource for Quranic studies programs, which can be integrated into digital curriculums, classroom materials, and online courses.
-- **Research Aid**: Supporting scholars and researchers in accessing a wide array of Quranic interpretations across different Tfasir books in a unified format.
-- **Community and Personal Study**: Assisting individuals seeking a deeper understanding of Quranic verses without requiring extensive background knowledge in classical Arabic.
+*   **The Problem:** When dealing with a complex argumentative text (e.g., Al-Razi proposing 3 probabilities for a verse), flat summarization often merges them or selects one randomly. This distorts the **Scientific Integrity** and flattens the meaning.
+*   **The Solution:** We built a system that understands the **"Tree Logic"** of the exegete (Opinion $\to$ Evidence $\to$ Rebuttal) and reconstructs it computationally into a hierarchical structure (JSON) that preserves the sequence of the argument.
 
-To facilitate usage, a **Google Colab notebook** is available, providing a flexible, interactive platform to explore the Tfasir summaries. This tool allows users to navigate the data, filter by specific criteria, and examine interpretations at both high-level and detailed views.
+---
 
-### Getting Started
-To begin working with the **Tfasir Dataset**, follow these steps:
+## 🚀 Key Contributions & Innovation
+
+We have created what is considered the largest **Structured Summarization Corpus** in the history of digital Quranic service, covering 44 major references.
+
+### 1. Hierarchical Semantic Analysis
+We developed algorithms that do not read the text as a "single block" but deconstruct it into a **Knowledge Tree**. The system automatically distinguishes between:
+*   Main Idea
+*   Sub-idea
+*   Transmitted Evidence (Dalil Naqli)
+*   Rational Reasoning (Ta'leel Aqli)
+
+### 2. Comparative Intelligence
+By converting texts into structured data, we enable **Automated Intersection** between scholars. The system can now answer: *"What are the points of agreement and disagreement between Ibn Ashur and Al-Razi?"* by comparing specific **Knowledge Nodes** rather than abstract text matching.
+
+### 3. Preserving Plurality (Probabilistic Structure)
+Unlike reductive summaries, our system is designed to understand the **Structure of Probabilities**. If an interpreter mentions "three faces" of interpretation, the system sorts them as independent branches (Face 1, Face 2, Face 3) with their respective evidence, preserving the rich plurality of the heritage.
+
+---
+
+## 💻 Application & Usage (Interactive Notebook)
+
+We have provided a **Google Colab Notebook** to demonstrate the capabilities of the generated summaries. This notebook allows you to explore the hierarchical summaries, visualize the knowledge trees, and test the filtering mechanisms.
+
+<div align="center">
+
+| **🌟 Explore the Tfasir Summaries** |
+| :---: |
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/14800e41Tdxcsb6tcrnn8_wKK-neDcQ86?usp=sharing) |
+| *Click the badge above to interact with the data* |
+
+</div>
+
  <p align="center">
    <img src = "https://raw.githubusercontent.com/NoorBayan/Tfasir/main/images/TfasirColab.png" width = "800px"/>
  </p>
- 
-1. **Clone the Repository**:
-   Clone the repository to your local machine using the command:
-   ```bash
-   git clone https://github.com/NoorBayan/Tfasir.git
-   
-2. **Access the Google Colab Notebook**:  
-   Open the provided Google Colab notebook, which is designed to showcase the dataset’s features and facilitate easy exploration.
 
-3. **Explore the Dataset**:  
-   Use the notebook's search and filtering functions to delve into specific Tfasir entries, experiment with query parameters, and discover the wide range of interpretations.
+---
 
-### Contributing
-We welcome contributions from scholars, developers, and members of the community interested in enhancing the **Tfasir Dataset**. If you would like to contribute, please submit a pull request or contact the project maintainers. Contributions may include:
-- Additional data sources
-- Improvements to summarization accuracy
-- Expanded functionality and tools for dataset navigation
+## 📂 Data Structure
+
+The dataset is organized to reflect the layered complexity of Quranic exegesis. Each entry represents a structured node containing:
+
+```json
+{
+  "surah": "Chapter Name",
+  "ayah": "Verse Number",
+  "interpreter": "Scholar Name",
+  "source_book": "Book Title",
+  "content_tree": {
+    "main_topic": "The core theme of the verse",
+    "interpretations": [
+      {
+        "opinion": "First Interpretation (Face 1)",
+        "evidence": "Linguistic or textual evidence",
+        "reasoning": "Rational or contextual reasoning"
+      },
+      {
+        "opinion": "Second Interpretation (Face 2)",
+        "evidence": "...",
+        "reasoning": "..."
+      }
+    ]
+  }
+}
+```
+
+---
+
+## 🛠 Getting Started
+
+To begin working with the **Tfasir Dataset**:
+
+1.  **Clone the Repository**:
+    ```bash
+    git clone https://github.com/NoorBayan/Tfasir.git
+    ```
+2.  **Run the Notebook**: Access the Google Colab link provided above to visualize the data.
+3.  **Explore**: Use the structured JSON files in the `/data` directory for your own NLP or theological research tasks.
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions from NLP engineers, Islamic scholars, and data scientists. Whether it's improving the parsing algorithms, adding new books, or refining the semantic nodes, your help is valuable.
+
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+*Part of the NoorBayan Initiative for Digital Quranic Intelligence.*
 
