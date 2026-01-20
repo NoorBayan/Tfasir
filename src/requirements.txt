@@ -1,0 +1,7 @@
+datasets
+nltk
+sentencepiece
+transformers
+numpy
+rouge
+torchmetrics
